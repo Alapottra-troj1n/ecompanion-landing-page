@@ -1,25 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="output.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
     <title>Ecompanion</title>
-</head>
-<body>
-    <nav class="grid grid-cols-3 list-none place-items-center">
-                <div>
-                        <h2>Ecompanion</h2>
-                </div>
-                <div class="flex gap-3">
-                        <li>Product</li>
-                        <li>Features</li>
-                        <li>Pricing</li>
-                </div>
-                <div class="flex gap-3">
-                    <li>Login</li>
-                        <button>Get Beta Access</button>
-                </div>
+  </head>
+  <body class="font-poppins text-charcoal">
+    <nav class="flex justify-between list-none py-8 px-20 mx-auto">
+      <div>
+        <h2 class="text-xl font-bold cursor-pointer">Ecompanion</h2>
+      </div>
+      <div class="flex gap-3">
+        <li class="cursor-pointer">Product</li>
+        <li class="cursor-pointer">Features</li>
+        <li class="cursor-pointer">Pricing</li>
+      </div>
+      <div class="flex gap-3 items-center">
+        <li class="cursor-pointer">Login</li>
+        <button class="px-4 bg-primary py-2 rounded-md text-white font-medium">Get Beta Access</button>
+      </div>
     </nav>
-</body>
+
+    <section class="px-20 mt-10 mx-auto grid grid-cols-2">
+      <div>
+        <h4 class="font-medium">AI CHATBOT</h4>
+        <h2 class="text-5xl font-bold w-[90%] pt-2 leading-[60px]">
+          <span class="text-secondary">Boost</span> your online success with Ecompanion
+        </h2>
+        <p class="text-lg text-gray-500 pt-5 ">
+          Supercharge your online business: the revolutionary AI-powered shop
+          assistant. Maximize conversions, increase sales, and delight your
+          customers with Ecompanion's unmatched knowledge and conversational
+          expertise.
+        </p>
+        <div class="flex items-center pt-5">
+          <button
+            class="bg-primary hover:bg-primary/80 transition-all py-3 px-8 rounded-md font-medium text-white mr-5"
+          >
+            Early Access
+          </button>
+          <span class="text-gray-800 font-medium "
+            >Get access to our exclusive private beta</span
+          >
+          <img class="w-8" src="./assets/arrow.svg" alt="">
+         
+        </div>
+      </div>
+
+      <div>
+        <video autoplay>
+          <source src="./assets/hero.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </section>
+
+
+    <section class="mt-20 mb-20">
+      <h2 class="text-center font-medium text-xl">They are already part of the <span class="text-secondary font-bold">revolution!</span></h2>
+      <div class="pt-10 flex justify-center ">
+         <div class="flex gap-7">
+          <img src="./assets/forbes.svg" alt="">
+          <img src="./assets/fox.svg" alt="">
+          <img src="./assets/hubspot.svg" alt="">
+         </div>
+      </div>
+    </section>
+  </body>
 </html>
