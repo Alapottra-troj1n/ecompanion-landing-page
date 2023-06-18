@@ -14,6 +14,15 @@ module.exports = {
         charcoal: '#212121',
         mygolden: '#FDBE3B'
       },
+      keyframes: {
+            fadeIn: {
+              "0%": { opacity: 0 },
+              "100%": { opacity: 100 },
+            },
+          },
+          animation: {
+            fadeIn: "fadeIn 0.2s ease-in-out forwards",
+          },
     },
   },
   plugins: [],
