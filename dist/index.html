@@ -13,22 +13,37 @@
     <title>Ecompanion</title>
   </head>
   <body class="font-poppins text-charcoal bg-white overflow-x-hidden">
-    <nav class="flex justify-between list-none py-8 lg:max-w-6xl px-8 mx-auto">
-      <div>
-        <h2 class="text-xl font-bold cursor-pointer">Ecompanion</h2>
-      </div>
-      <div class="gap-5 hidden lg:flex">
-        <li class="cursor-pointer">Product</li>
-        <li class="cursor-pointer">Features</li>
-        <li class="cursor-pointer">Pricing</li>
-      </div>
-      <div class="gap-3 items-center hidden lg:flex">
-        <li class="cursor-pointer">Login</li>
-        <a href="./betaform.html"  class="px-4 bg-primary py-2 rounded-md text-white font-medium">
-          Get Beta Access
-        </a>
-      </div>
-    </nav>
+    <header class="bg-white">
+      <nav class="flex justify-between items-center max-w-6xl px-5 py-5 mx-auto">
+          <div class="z-50">
+            <h2 class="text-xl font-bold cursor-pointer">Ecompanion</h2>
+          </div>
+          <div
+              class="nav-links duration-500 md:static absolute bg-white md:min-h-fit min-h-[50vh] left-0 top-[-100%] md:w-auto  w-full flex items-center px-5">
+              <ul class="flex md:flex-row flex-col md:items-center md:gap-5 gap-8">
+                  <li>
+                      <a class="hover:text-gray-500" href="#">Products</a>
+                  </li>
+                  <li>
+                      <a class="hover:text-gray-500" href="#">Solution</a>
+                  </li>
+                  <li>
+                      <a class="hover:text-gray-500" href="#">Resource</a>
+                  </li>
+                  <li>
+                      <a class="hover:text-gray-500" href="#">Developers</a>
+                  </li>
+                  <li>
+                      <a class="hover:text-gray-500" href="#">Pricing</a>
+                  </li>
+              </ul>
+          </div>
+          <div class="flex items-center gap-6 z-50">
+              <button class="bg-primary text-white px-5 py-2 rounded-full ">Early Access</button>
+              <img name="menu" class="w-10 cursor-pointer md:hidden" src="./assets/hamburger.svg" onclick="onToggleMenu(this)">
+          </div>
+  </header>
+
 
     <section
       class="lg:max-w-6xl px-8 lg:mt-10 mx-auto grid grid-cols-1 lg:grid-cols-2"
@@ -48,7 +63,8 @@
           expertise.
         </p>
         <div class="flex flex-col lg:flex-row items-center pt-5">
-          <a href="./betaform.html"
+          <a
+            href="./betaform.html"
             class="bg-primary hover:bg-primary/80 transition-all py-3 px-8 rounded-md font-medium text-white mr-5"
           >
             Early Access
@@ -112,7 +128,9 @@
         Why <span class="text-secondary">Ecompanion ?</span>
       </h2>
 
-      <div class="flex flex-col pt-14 gap-10 lg:gap-20 items-center lg:flex-row">
+      <div
+        class="flex flex-col pt-14 gap-10 lg:gap-20 items-center lg:flex-row"
+      >
         <div class="h-[25rem] bg-slate-500 rounded-md w-[25rem]"></div>
 
         <div class="flex-1">
@@ -126,7 +144,9 @@
         </div>
       </div>
 
-      <div class="flex flex-col lg:flex-row-reverse pt-14 gap-10 lg:gap-20 items-center">
+      <div
+        class="flex flex-col lg:flex-row-reverse pt-14 gap-10 lg:gap-20 items-center"
+      >
         <div class="h-[25rem] bg-slate-500 rounded-md w-[25rem]"></div>
 
         <div class="flex-1">
@@ -140,7 +160,9 @@
         </div>
       </div>
 
-      <div class="flex flex-col lg:flex-row pt-14 gap-10 lg:gap-20 items-center">
+      <div
+        class="flex flex-col lg:flex-row pt-14 gap-10 lg:gap-20 items-center"
+      >
         <div class="h-[25rem] bg-slate-500 rounded-md w-[25rem]"></div>
 
         <div class="flex-1">
@@ -155,7 +177,9 @@
     </section>
 
     <section class="mt-24 mb-20 px-8 lg:max-w-6xl mx-auto">
-      <h2 class="text-center font-bold text-3xl lg:text-5xl leading-relaxed lg:leading-normal">
+      <h2
+        class="text-center font-bold text-3xl lg:text-5xl leading-relaxed lg:leading-normal"
+      >
         Frequenty Asked <span class="text-secondary">Questions</span>
       </h2>
       <div class="mx-auto bg-white">
@@ -314,7 +338,6 @@
     </section>
 
     <footer>
-      
       <div class="px-20 mx-auto">
         <div class="py-6 flex items-center sm:flex-row flex-col">
           <a
@@ -394,4 +417,21 @@
       </div>
     </footer>
   </body>
+
+  <script>
+    const navLinks = document.querySelector('.nav-links')
+    function onToggleMenu(e){
+
+      if(e.name === 'menu'){
+        e.src = './assets/cross.svg'
+      }else{
+        e.src = './assets/hamburger.svg'
+      }
+     
+        e.name = e.name === 'menu' ? 'close' : 'menu'
+
+      
+        navLinks.classList.toggle('top-[0%]')
+    }
+</script>
 </html>
