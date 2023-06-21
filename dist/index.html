@@ -39,7 +39,7 @@
               </ul>
           </div>
           <div class="flex items-center gap-6 z-50">
-             <a href="./betaform.html"> <button class="bg-primary text-white px-5 py-2 rounded-full ">Early Access</button></a>
+             <a href="#earlyaccess"> <button class="bg-primary text-white px-5 py-2 rounded-full ">Early Access</button></a>
               <img name="menu" class="w-10 cursor-pointer md:hidden" src="./assets/hamburger.svg" onclick="onToggleMenu(this)">
           </div>
   </header>
@@ -64,7 +64,7 @@
         </p>
         <div class="flex flex-col lg:flex-row items-center pt-5">
           <a
-            href="./betaform.html"
+            href="#earlyaccess"
             class="bg-primary hover:bg-primary/80 transition-all py-3 px-8 rounded-md font-medium text-white mr-5"
           >
             Early Access
@@ -176,7 +176,7 @@
       </div>
     </section>
 
-    <section class="mt-24 mb-20 px-8 lg:max-w-6xl mx-auto">
+    <section class="mt-24 px-8 lg:max-w-6xl mx-auto">
       <h2
         class="text-center font-bold text-3xl lg:text-5xl leading-relaxed lg:leading-normal"
       >
@@ -337,11 +337,37 @@
       </div>
     </section>
 
+    <section id="earlyaccess" class="mt-24 mb-20 px-8 lg:max-w-6xl mx-auto">
+      <div class="flex justify-center h-full items-center">
+        <div>
+          <h3 class="text-center font-bold text-3xl lg:text-5xl leading-relaxed lg:leading-normal"> Request Early <span class="text-secondary">Access</span></h3>
+          <p class="text-gray-600 mt-2 text-center font-medium text-sm md:text-base">
+            Ready to experience the power of ai with private beta? Sign up below
+            for exclusive access:
+          </p>
+          <form
+            class="text-center mt-5 flex  justify-center items-center"
+          >
+            <input
+              type="email"
+              placeholder="Email Address"
+              class="border border-gray-400 px-4 h-10 lg:w-64 rounded-l-md"
+            />
+            <button
+              class="bg-secondary/80 hover:bg-secondary transition-colors text-white px-3 lg:px-5 h-10 rounded-r-md text-xs lg:text-sm font-medium"
+            >
+             SIGN UP
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
     <footer>
       <div class="max-w-6xl px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
         <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
           <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
-            <h2 class="text-primary font-bold">LOGO</h2>
+            <h2 class="text-secondary font-bold">LOGO</h2>
             <span class="ml-3 text-xl">Ecompanion</span>
           </a>
           <p class="mt-2 text-sm text-gray-500">Supercharge your online business: the revolutionary AI-powered shop assistant.</p>
